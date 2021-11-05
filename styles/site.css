@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em repeat(15, 15em);
+  grid-template-rows: 5em repeat(3, 15em);
   margin: 0;
   background-color: black;
 }
@@ -11,157 +11,11 @@ header {
   background-color: white;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 0 5px;
-
+/* main section */
+main {
   display: grid;
-  grid-template-columns: 5% 10% 11% 10% 10% 130px repeat(6, min-content);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 37em);
 
-  height: 75px;
-}
-
-nav > ul > li {
-  float: left;
-  grid-column: span 1;
-}
-
-nav > ul > li > a {
-  display: block;
-
-  color: black;
-
-  text-align: center;
-
-  height: 38px;
-
-  padding: 20px 16px 22px 25px;
-
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-nav > ul > li:nth-child(1) > a {
-  padding-top: 10px;
-}
-
-nav > ul > li:nth-child(1) > a:hover {
-  background-color: white;
-}
-
-nav > ul > li > a:hover {
-  background-color: #04aa6d;
-}
-
-/* small down arrow next to menus in navbar  */
-.downArrow {
-  display: inline;
-  margin-top: 0.1em;
-  height: 16px;
-}
-
-/* first icon in list items that are on the right side of the navbar */
-.firstRightListIcon {
-  grid-column: 7 / 8;
-}
-
-.rightListIconLink {
-  padding-left: 10;
-}
-
-.firstRightListIconLink:hover {
-  background-color: white;
-}
-
-.firstRightListIconImage {
-  transform: translateY(25%);
-  width: 25;
-  height: 25;
-}
-
-/* all icons that are not first item in list items that are on the right side of the navbar */
-.RightListIconLink:hover {
-  background-color: white;
-}
-
-.RightListIconImage {
-  transform: translateY(25%);
-  width: 25;
-  height: 25;
-}
-
-/* login, paid courses and website in the navbar*/
-
-.loginNavBarLink:hover {
-  background-color: white;
-}
-
-.loginNavBarDiv,
-.paidCoursesNavBarDiv,
-.websiteNavBarDiv {
-  padding: 10px 10px 10px 0;
-
-  width: 120px;
-
-  border-radius: 25px;
-
-  transform: translateY(-5%);
-}
-
-.loginNavBarDiv {
-  font-weight: normal;
-  color: white;
-  background-color: #04aa6d;
-}
-
-.paidCoursesNavBarDiv {
-  font-weight: bold;
-}
-
-.websiteNavBarDiv {
-  background-color: #ffc0c7;
-}
-
-.loginNavBarDiv:hover {
-  background-color: #059862;
-}
-
-.paidCoursesNavBarLink:hover {
-  background-color: white;
-}
-
-.websiteNavBarLink:hover {
-  background-color: white;
-}
-
-.paidCoursesNavBarDiv:hover {
-  color: white;
-  font-weight: normal;
-  background-color: #04aa6d;
-}
-
-.websiteNavBarDiv:hover {
-  color: white;
-  font-weight: normal;
-  background-color: #04aa6d;
-}
-
-.loginNavBarListElement {
-  justify-self: flex-start;
-}
-
-/* new banner in navbar in the website menu*/
-.newBannerNavBar {
-  font-size: 11px;
-  font-weight: bold;
-  padding: 3px 10px;
-  text-align: center;
-  color: black;
-  border-radius: 25px;
-  border: 1px solid black;
-  position: relative;
-  top: -2px;
-  background-color: white;
+  grid-column: 1 /13;
 }
