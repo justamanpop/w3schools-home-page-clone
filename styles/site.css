@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em repeat(3, 15em);
+  grid-template-rows: 5em 3 * 37em;
   margin: 0;
   background-color: black;
 }
@@ -12,10 +12,10 @@ header {
 }
 
 /* main section */
-main {
+.main1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 37em);
+  grid-template-rows: repeat(3, 37em);
 
   grid-column: 1 /13;
 }

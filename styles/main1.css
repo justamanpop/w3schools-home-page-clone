@@ -19,7 +19,8 @@
 }
 
 .htmlLeftHeading,
-.cssLeftHeading {
+.cssLeftHeading,
+.jsLeftHeading {
   font-size: 100px;
   font-weight: 700;
 
@@ -28,7 +29,8 @@
 }
 
 .htmlLeftSubHeading,
-.cssLeftSubHeading {
+.cssLeftSubHeading,
+.jsLeftSubHeading {
   font-size: 19px;
 
   align-self: flex-start;
@@ -36,7 +38,8 @@
 }
 
 .htmlLeftLearnLink,
-.cssLeftLearnLink {
+.cssLeftLearnLink,
+.jsLeftLearnLink {
   background-color: #04aa6d;
   color: white;
   font-size: 18px;
@@ -75,7 +78,8 @@
 }
 
 .htmlLeftReferenceLink,
-.cssLeftReferenceLink {
+.cssLeftReferenceLink,
+.jsLeftReferenceLink {
   font-size: 18px;
   display: block;
   width: 160px;
@@ -102,7 +106,8 @@
 /* HTML right column */
 
 .htmlRight,
-.cssRight {
+.cssRight,
+.jsRight {
   display: grid;
 
   grid-template-rows: 6.5em auto 7.5em;
@@ -134,18 +139,28 @@
   line-height: 1.5;
 }
 
-.formattedLessThan,
-.formattedGreaterThan {
+.openingAngularBracketColor,
+.closingAngularBracketColor,
+.cssValueColor,
+.htmlAttributeValueColor,
+.jsKeywordColor {
   color: mediumblue;
 }
 
 .htmlTagName,
-.cssTagName {
+.cssTagName,
+.jsStringColor {
   color: brown;
 }
 
-.attributeColor {
+.htmlAttributeNameColor,
+.cssAttributeNameColor {
   color: red;
+}
+
+.cssDelimiterColor,
+.jsPropertyColor {
+  color: black;
 }
 
 .tryYourselfButton {
@@ -191,17 +206,30 @@
 }
 
 /* css left column */
-.cssLeft {
+.cssLeft,
+.jsLeft {
   display: grid;
 
   grid-template-rows: 6.5em 5em 6em 4em 4em;
 }
 
-.cssLeftReferenceLink {
+.cssLeftReferenceLink,
+.jsLeftReferenceLink {
   background-color: black;
   color: white;
 }
 
 /***************/
 
-/* css right column */
+/* js section */
+.js {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-column: 1 / 13;
+  grid-row: span 1;
+
+  background-color: #fff4a3;
+}
+
+/***************/
