@@ -1,3 +1,12 @@
+/* main1 section */
+.main1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 37em);
+
+  grid-column: 1 /13;
+}
+
 /* HTML section */
 .html {
   display: grid;

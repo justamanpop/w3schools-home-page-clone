@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em 3 * 37em;
+  grid-template-rows: 5em 111em 90em;
   margin: 0;
   background-color: black;
 }
@@ -9,13 +9,4 @@ body {
 header {
   grid-column: 1 / 13;
   background-color: white;
-}
-
-/* main section */
-.main1 {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 37em);
-
-  grid-column: 1 /13;
 }
