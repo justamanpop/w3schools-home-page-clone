@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em 111em 75em 50em;
+  grid-template-rows: 5em 111em 75em 50em 30em 33em 20em;
   margin: 0;
   background-color: black;
 }
