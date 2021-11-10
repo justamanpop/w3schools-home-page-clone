@@ -1,0 +1,49 @@
+.certified {
+  display: grid;
+  grid-template-rows: 3em 6em 5em 5em repeat(3, 5em);
+
+  grid-column: 1 /13;
+
+  background-color: #282a35;
+  color: #ffc0c7;
+}
+
+.certified > h2 {
+  grid-row: 2 / 3;
+  font-size: 62px;
+
+  margin-left: 2em;
+
+  align-self: center;
+}
+
+.certified > p {
+  grid-row: 4 / 5;
+  font-size: 52px;
+
+  margin-left: 2em;
+
+  align-self: center;
+}
+
+.certified > .getStartedButton {
+  background-color: #04aa6d;
+  color: white;
+
+  text-decoration: none;
+  text-align: center;
+
+  height: 1.2em;
+  width: 5em;
+
+  padding: 17px 55px;
+
+  margin-left: 6.5em;
+
+  border-radius: 50px;
+  font-size: 18px;
+
+  overflow: hidden;
+
+  grid-row: 6 / 7;
+}
